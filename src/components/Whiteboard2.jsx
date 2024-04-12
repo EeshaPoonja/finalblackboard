@@ -599,11 +599,14 @@ function help(){
       ref={canvasRef}
      
       onMouseDown={startDrawing}
+      onTouchStart={startDrawing}
       onMouseMove={draw}
-      
+      onTouchMove={draw}
       onMouseUp={finishDrawing}
+      onTouchEnd={finishDrawing}
     onMouseOut={finishDrawing}
     onClick={changepos}
+    
 
     />
 <Zzz downloadCanvasImage={downloadCanvasImage} save={save} opend={opend} erasedone={erasedone} pen={pen} create_rect={create_rect} create_Line={create_Line}  create_circle={create_circle} create_image={create_image} create_square={create_square}/>
