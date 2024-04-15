@@ -12,6 +12,8 @@ body {
  display: inline-flex;
  flex-wrap: wrap;
  width:100%;
+ overflow-x: hidden;
+overflow-y: hidden;
 }
 
 
@@ -53,7 +55,7 @@ input{
 
   margin-left:2%;
   margin-right: 1%;
-  
+
   
   
 }
@@ -65,8 +67,8 @@ p{
   display:flex;
   flex-direction:column;
   position:absolute;
- top:27%;
- left:85%;
+ top:35%;
+ left:70%;
 
 }
 
@@ -92,15 +94,17 @@ border: transparent;
   background-color:#31363F; 
 
 }
-
+#myrange .slider{
+  width:100%;
+}
 .not{
   display:inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
- width:20em;
- height:10em;
-padding:2em;
- margin:3em;
+ width:10em;
+ height:7em;
+padding:1em;
+ margin:1em;
  
  justify-content: center;
  align-items: center;
@@ -110,11 +114,28 @@ padding:2em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border:5px solid #222831;
 }
-.not:hover{
+.notmob{
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ width:10em;
+ height:5em;
+padding:1em;
+ margin:1.5em;
+ 
+ justify-content: center;
+ align-items: center;
+  background-color: #EEEEEE;
+  color:#222831;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border:5px solid #222831;
+}
+.not:hover,.notmob:hover{
   background-color:#76ABAE;
   color: #ffffff;
 }
-.not div{
+.not div,.notmob div{
  display:inline-flex;
  flex-direction: column;
 flex-wrap: wrap;
@@ -165,7 +186,7 @@ a input:hover{
  /* MyComponent.css */
 .slider {
   -webkit-appearance: none;
-  width: 70%;
+
   height: 25px;
   background: #31363F;
   outline: none;
@@ -252,6 +273,9 @@ button:hover{
 #myRange2 input:hover{
   background-color:#5b7779;
 }
+#myRange2mob input:hover{
+  background-color:#5b7779;
+}
 #colorPicker{
   height:3em;
   width:5em;
@@ -265,17 +289,21 @@ button:hover{
  margin:10%;
  width:100%;
 }
+#myRange2mob {
+  margin:10%;
+  width:70%;
+ }
 #shortkeys{
   display:inline-flex;
   flex-direction: column;
   position:absolute;
   top:14%;
-  left:1550px;
+  left:0%;
   background-color:#76ABAE;
   border:1px solid #EEEEEE;
  font-weight: bold;
 border-radius: 30px;
-width:11%;
+width:fit-content;
 transition:width 2s;
   text-align: center;
   
@@ -299,5 +327,21 @@ transition:width 2s;
  
 }
 .all{
-  width:fit-content;
+  width:100%;
+
+  display:inline-flex;
+  flex-wrap: wrap;
+
+}
+.notall{
+  display:none;
+}
+.mob{
+  color:white;
+}
+#disape{
+  display:none;
+}
+#ape{
+  display:visible;
 }

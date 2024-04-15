@@ -599,11 +599,11 @@ function help(){
       ref={canvasRef}
      
       onMouseDown={startDrawing}
-      onTouchStart={startDrawing}
+    
       onMouseMove={draw}
-      onTouchMove={draw}
+  
       onMouseUp={finishDrawing}
-      onTouchEnd={finishDrawing}
+    
     onMouseOut={finishDrawing}
     onClick={changepos}
     
