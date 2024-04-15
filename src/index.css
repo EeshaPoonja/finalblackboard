@@ -331,7 +331,7 @@ transition:width 2s;
 
   display:inline-flex;
   flex-wrap: wrap;
-
+ justify-content: center;
 }
 .notall{
   display:none;

@@ -158,6 +158,7 @@ function save(){////function to save current canvas with a file name
         setLastY(e.nativeEvent.offsetY);
     }
     setape(false);
+    myhide();
   
   }
 
@@ -251,6 +252,7 @@ function pen(){
 
 /// allow drawing on canvas
   const startDrawing = (e) => {
+    e.preventDefault();
     setape(false);
     setnotes(false);
     setIsDrawing(true);
@@ -260,7 +262,7 @@ function pen(){
   };
 ////start drawing (erase or pen)
   const draw = (e) => {
-
+e.preventDefault();
     if (!isDrawing) return;
     if(erase==='1'){
       setColor("#222831");
